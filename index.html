@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid nav">
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active"  aria-current="page" href="#">Administrador</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+    </header>
+    <main>
+      
+      <div class="contenedor">
+       
+        <div class="personajes">
+          <a  id="toggle-imgs"><img id="avatar" src="/image/rick.jpeg" alt=""></a>
+          <div class="hidden" id="imgs"> </div>
+        </div>
+      
+        
+        <div id="productos"></div>
+        <!--  <div id="contenedorImagen"></div> -->
+        <div class="form-prod">
+          <h2>Crear Producto</h2>
+          <!--  <input type="file" id="inputImagen" /> -->
+
+          <input type="text" id="nombre" placeholder="Nombre del producto" />
+          <input type="text" id="precio" placeholder="Precio" />
+          <input type="text" id="stock" placeholder="Stock" />
+          <button id="btn-create-product">Crear Producto</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="carrito.js"></script>
+  </body>
+</html>
